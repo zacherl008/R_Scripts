@@ -1,3 +1,8 @@
+##A script that runs on blood cholestrol level/age/BMI data. The data is plotted by both boxplots, scatter plots, and histograms.
+##Any missing data is replacing with na via a loop for each column. A T test was run in order to determine whether blood cholestrol
+##levels have a statistically significant difference for each BMI and these results were interpreted in terms of the P value and the 
+##null and alternative hypotheses.
+
 ##Kyndra Zacherl
 ##Reading CCD data
 data <- read.table('C://Users/kzacherl//Desktop/Rdata/CCDdata.txt', header = TRUE)
