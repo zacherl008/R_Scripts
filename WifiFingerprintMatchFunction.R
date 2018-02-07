@@ -1,5 +1,7 @@
 ##A function designed to compare two different wifi access points broadcasting the same frequency and match them based on identical 
-##fingerprints and time stamps. The signal strength at each matching point in time are retrieved and compared. A vector is then returned ##of the differences between times with a matching fingerprint in both access points. A hypothesis test is then run on the values ##contained in this vector to determine whether the difference in signal strength between access points is significant.
+##fingerprints and time stamps. The signal strength at each matching point in time are retrieved and compared. A vector is then returned
+##of the differences between times with a matching fingerprint in both access points. A hypothesis test is then run on the values
+##contained in this vector to determine whether the difference in signal strength between access points is significant.
 
 ##Kyndra Zacherl
 ##Reading WifiData csv
