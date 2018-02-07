@@ -1,3 +1,5 @@
+##A script to complete mean T-tests on each access point and each frequency. First, the data was split into separate vectors containing ##all data points of one access point at the same frequency. A boxplot was then created of the signal strengths for each frequency and ##access point. Mean TTests were run on each access point frequency vector in order to determine the confidence interval and wheteher ##the differences in signal strength between access points were statistically significant. The .docx file with the same name is an interpretation of these results in regard to the null and alternative hypotheses.
+.
 #Kyndra Zacherl
 #Reading the file and attaching the columns
 WifiData <- read.csv('C://Users//kzacherl//Desktop/z335_Wifi_Info_2014-09-16.csv')
