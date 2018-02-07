@@ -9,12 +9,10 @@
 WifiData <- read.csv('C://Users//kzacherl//Desktop/z335_Wifi_Info_2014-09-16.csv')
 attach(WifiData)
 
-#2
 #sort by AP_Name and AP_Frequency, attach column names for simple reference
 splitdata <- split(WifiData,interaction(WifiData$AP_Name,WifiData$AP_Frequency))
 attach(splitdata)
 
-#3
 #Show five number summary of Signal Strength for each subset and for AP_Name and AP_Frequency; if a frequency has no data points for a certain access
 #point it is excluded from the list.
 #Access point alsportin's iPhone caused issues due to the symbols so its name was changed to iphone in the csv.
@@ -55,7 +53,6 @@ summary(CISATV.5765$AP_SignalStrength)
 summary(GUGuest.5765$AP_SignalStrength)
 summary(GUWireless.5765$AP_SignalStrength)
 
-#4
 #Save all data to each access point name.
 ACCESS1 <- WifiData[AP_Name == 'ACCESS1',]
 BBTransact <- WifiData[AP_Name == 'BBTransact',]
@@ -87,7 +84,6 @@ boxplot(Freq2412[,5], Freq2422[,5], Freq2437[,5], Freq2462[,5], Freq5200[,5], Fr
         range = 0, border = rainbow(7), xlab = "Access Point Frequency", ylab = "Signal Strength", names = c('2412', '2422', '2437', '2462',
         '5200', '5240', '5765'), main = "Signal Strength by Frequency")
 
-#5
 #Confidence interval for means for each subcategory and AP_Frequency
 
 xbar = mean(AP_Frequency)
