@@ -1,5 +1,7 @@
+##A function designed to compare two different wifi access points broadcasting the same frequency and match them based on identical 
+##fingerprints and time stamps. The signal strength at each matching point in time are retrieved and compared. A vector is then returned ##of the differences between times with a matching fingerprint in both access points. A hypothesis test is then run on the values ##contained in this vector to determine whether the difference in signal strength between access points is significant.
+
 ##Kyndra Zacherl
-##Question 1
 ##Reading WifiData csv
 WifiData <- read.csv('C://Users//kzacherl//Desktop/z335_Wifi_Info_2014-09-16.csv')
 attach(WifiData)
@@ -39,14 +41,12 @@ APDifference <- function(AP1, AP2, frequency){
   ##Returning vector
   return(vec)
 }
-##Question 2
 ##Saving output of function for statistical testing
 vector <- APDifference('CISATV', 'CISACL', '2412')
 
 ##Hypothesis test for mean
 t.test(vector, mu = 0, alternative = 'two.sided')
 
-##Question 3
 vector = abs(vector)
 sum = sum(vector)
 length = length(vector)
