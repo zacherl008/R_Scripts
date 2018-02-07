@@ -1,5 +1,6 @@
 ##This script runs on data regarding the Life Expectancy, GDP, and HIV rates per country.
-##GDP vs Life Expectancy and GDP vs HIV rates are plotted and then a regresson line is added and then the coefficient of determination, ##confidence interval, R-Squared, and standard error are calculated from this.
+##GDP vs Life Expectancy and GDP vs HIV rates are plotted and then a regresson line is added and then the coefficient of determination, 
+##confidence interval, R-Squared, and standard error are calculated from this.
 ##A hypothesis test is also run in order to determine the P value and if the correlation is statistically significant.
 
 ##Kyndra Zacherl
