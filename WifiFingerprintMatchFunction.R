@@ -5,15 +5,15 @@
 
 ##Kyndra Zacherl
 ##Reading WifiData csv
-WifiData <- read.csv('C://Users//kzacherl//Desktop/z335_Wifi_Info_2014-09-16.csv')
+WifiData <- read.csv('C://Users//kzacherl//Documents//Git//R_Scripts//RData//z335_Wifi_Info_2014-09-16.csv')
 attach(WifiData)
 ##Writing function
 APDifference <- function(AP1, AP2, frequency){
   ##Declaring vector
   vec <- vector()
   ##Generating data sets using user entered arguments
-  dataset1 <- WifiData[ which(WifiData$AP_Name == AP1 & WifiData$AP_Frequency == frequency),]
-  dataset2 <- WifiData[ which(WifiData$AP_Name == AP2 & WifiData$AP_Frequency == frequency),]
+  dataset1 <- WifiData[ which(AP_Name == AP1 & AP_Frequency == frequency),]
+  dataset2 <- WifiData[ which(AP_Name == AP2 & AP_Frequency == frequency),]
   ##Determining length of smallest data set for for loop
   if((nrow(dataset1)) > (nrow(dataset2))){
     length <- nrow(dataset2) 
